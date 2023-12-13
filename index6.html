@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Document</title>
+    <script src="./vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <p>欢迎访问优质VX前端bug交流群!</p>
+        <p>助力你在学习前端的道路畅通无阻</p>
+        <p>入群即享 免费解决bug, 免费bug总结笔记, 免费技术分享</p>
+        <p><span class="sp" @click="discli">支付1元即可进群</span> ,<span class="sp"> 支付完请联系微信: womeiyouzhuce</span></p>
+        <p>如果你有基础技术,那这道付款防御应该能轻松破解,就不用花钱了😄</p>
+        <p>破解方法就在这个网站 🤔</p>
+        <p>来了不会吃亏, 不来一定吃亏!</p>
+        <p v-if="size == 5" class="img">{{bass}}</p><img v-if="size !== 5" class="img" src="./fukuan.jpg" alt=""
+            srcset="">
+    </div>
+</body>
+<script>let { createApp, bas } = Vue, app = createApp({ data() { return { size: 0, bass: bas } }, methods: { discli() { this.size++ }, base64_decode(e) { return decodeURIComponent(escape(atob(e))) } } }); app = app.mount("#app")</script>
+<style>
+    #app {
+        margin: 0 auto
+    }
+
+    .sp {
+        color: red
+    }
+
+    .sp2 {
+        display: none
+    }
+
+    .img {
+        width: 400px
+    }
+</style>
+
+</html>
